@@ -1,0 +1,101 @@
+<div class="alert alert-success text-center" role="alert" style="margin-top: 60px;">
+        Su resultado fue:
+    </div>
+    <div class="row text-center">
+            <div style="display: block" style="margin-left: 50px;">
+                    <canvas baseChart
+                                [data]="doughnutChartData"
+                                [labels]="doughnutChartLabels"
+                                [chartType]="doughnutChartType"
+                                (chartHover)="chartHovered($event)"
+                                (chartClick)="chartClicked($event)"></canvas>
+                  </div>
+    </div>
+    <hr>
+    <div class="row" *ngIf="isNeeded">
+        <h2> Te recomendamos </h2>
+        <ul class="list-group" style="margin-left: 3px;">
+            <li class="list-group-item justify-content-between">
+                Arquitecto
+                <span style="margin-left: 6px;" data-toggle="modal" data-target="#exampleModalLong"><img class="img-thumbnail" src="../../../assets/images/e1.jpg" alt="Card image cap" width="250rem"></span>
+            </li>
+            <li class="list-group-item justify-content-between">
+                    Admistrador
+                    <span style="margin-left: 6px;" data-toggle="modal" data-target="#exampleModalLong1"><img class="img-thumbnail" src="../../../assets/images/e2.jpg" alt="Card image cap" width="250rem"></span>
+                </li>
+                <li class="list-group-item justify-content-between">
+                        Industrial
+                        <span style="margin-left: 6px;" data-toggle="modal" data-target="#exampleModalLong2"><img class="img-thumbnail" src="../../../assets/images/e4.jpg" alt="Card image cap" width="230rem"></span>
+                    </li>
+        </ul>
+
+    </div>
+
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">¿Qué hace?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+        <div class="modal-body">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <p class="lead">Es quien diseña, dirige y da mantenimiento a los edificios, ciudades y estructuras. Su arte parte de reflexionar conceptos y responder a las necesidades sociales.</p>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">¿Qué hace?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+        <div class="modal-body">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <p class="lead">Debe tener una visión; debe poder aplicar y desarrollar conocimientos del proceso administrativo (planeación, organización, dirección y control). Debe encaminar sus objetivos a los de la empresa.</p>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">¿Qué hace?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+        <div class="modal-body">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <p class="lead">Es el encargado de supervisar y optimizar los procesos industriales sin importar la naturaleza de los mismos (RRHH, logística, cadena productiva, proveeduría, entre otros)</p>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,45 @@
+<div class="alert alert-success text-center" role="alert">
+
+</div>
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col">
+        <div class="text-center" >
+                <img class="img-thumbnail" src="../../../assets/images/a.jpg" alt="Card image cap" width="200rem;" style="margin-left: 20px;">
+                <div class="card-block">
+                    <p class="card-title">¿Sabes que quieres ser?</p>
+                    <button  class="btn btn-success"  data-toggle="modal" data-target="#exampleModalLong" style="margin-right:10px;">Si</button>
+                    <button  class="btn btn-danger" (click)="goImageNo()" >No</button>
+                </div>
+                </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Selecciona tu carrera</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+        <div class="modal-body">
+                <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Selecciona
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <button class="dropdown-item" (click)="goDoc()"  data-dismiss="modal">Medicina General</button>
+                          <button class="dropdown-item" (click)="goProgrammer()" data-dismiss="modal">Ingenieria en Sistemas</button>
+                        </div>
+                      </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+        </div>
+    </div>
+    </div>
